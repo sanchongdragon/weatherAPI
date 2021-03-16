@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./weatherAPI.js"></script>
+    <!-- <script src="./CityID.js"></script> -->
+    <title>ConnectWeatherAPI</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+        table,td,tr{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h3>透過Open Weather Map的API抓取某經緯度一周的天氣</h3>
+    <label for="lat">請輸入緯度</label>
+    <input type="text" id="lat" value="24">
+    <label for="lng">請輸入經度</label>
+    <input type="text" id="lng" value="121"><p>
+    <input type="button" id="connect" value="抓取資料" onclick="conn()"><p>
+    <div id="content">
+
+
+    </div>
+</body>
+</html>
